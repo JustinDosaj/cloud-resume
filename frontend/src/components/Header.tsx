@@ -173,7 +173,7 @@ function Avatar({
       {...props}
     >
       <img
-        src={'https://s3.us-west-1.amazonaws.com/justindosaj.com/_next/static/media/avatar.32437b43.jpeg'}
+        src={'https://s3.us-west-1.amazonaws.com/justindosaj.com/images/headshot.jpeg'}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
@@ -191,7 +191,7 @@ function VisitorCount() {
   useEffect(() => {
     async function fetchCount() {
       try {
-        const response = await axios.get('https://pfa7uhjl48.execute-api.us-west-1.amazonaws.com/Prod/visitor-count');
+        const response = await axios.get('https://nyh3cwajne.execute-api.us-west-1.amazonaws.com/Prod/visitor-count');
         setCount(response.data.count);
 
       } catch (error) {
