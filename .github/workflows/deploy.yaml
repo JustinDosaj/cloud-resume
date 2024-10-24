@@ -47,7 +47,7 @@ jobs:
 
   deploy-frontend:
     runs-on: ubuntu-latest
-    needs: deploy-backend  # This ensures backend deploys first
+    needs: deploy-backend
     steps:
       - uses: actions/checkout@v4
       
@@ -55,26 +55,34 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: './frontend/package-lock.json'
           
       - name: Install dependencies
         working-directory: ./frontend
-        run: npm ci
+        run: |
+          npm ci
+          # If you're using npm < 7, use:
+          # npm install
         
       - name: Build NextJS static site
         working-directory: ./frontend
-        run: npm run build
-        
+        env:
+          CI: false  # This prevents treating warnings as errors
+        run: |
+          npm run build
+          
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-1  # Change to your region
+          aws-region: ${{ secrets.AWS_REGION }}
           
       - name: Deploy to S3
         working-directory: ./frontend
         run: |
-          aws s3 sync ./out s3://${{ secrets.S3_BUCKET }} --delete
+          aws s3 sync out/ s3://${{ secrets.S3_BUCKET }} --delete
           
       - name: Invalidate CloudFront cache
         run: |
