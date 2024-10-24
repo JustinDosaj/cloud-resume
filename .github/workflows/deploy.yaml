@@ -30,8 +30,18 @@ jobs:
       - name: Build and deploy SAM application
         working-directory: ./backend
         run: |
+          # Create deployment bucket if it doesn't exist
+          aws s3 mb s3://cloud-resume-sam-deployment-${{ secrets.AWS_REGION }} --region ${{ secrets.AWS_REGION }} || true
+          
+          # Build and deploy
           sam build
-          sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name cloud-resume-backend --capabilities CAPABILITY_IAM
+          sam deploy \
+            --no-confirm-changeset \
+            --no-fail-on-empty-changeset \
+            --stack-name cloud-resume-backend \
+            --s3-bucket cloud-resume-sam-deployment-${{ secrets.AWS_REGION }} \
+            --capabilities CAPABILITY_IAM \
+            --region ${{ secrets.AWS_REGION }}
 
   deploy-frontend:
     runs-on: ubuntu-latest
