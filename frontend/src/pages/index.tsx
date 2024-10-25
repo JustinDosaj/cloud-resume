@@ -1,5 +1,7 @@
 import { Container } from "@/components/Container";
-
+import { TbBrandGithubFilled, TbBrandLinkedin  } from "react-icons/tb"
+import { SocialLink } from "@/components/Links/SocialLink";
+import { Experience } from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -12,7 +14,18 @@ export default function Home() {
           <p className="mt-6 text-base text-zinc-600">
             Hello, I am Justin. I am in the process of finishing this web page, but it is not quite ready.
           </p>
-
+          <div className="mt-6 flex gap-6">
+            <SocialLink
+              href="#"
+              aria-label="Follow on GitHub"
+              icon={TbBrandGithubFilled}
+            />
+            <SocialLink
+              href="#"
+              aria-label="Follow on LinkedIn"
+              icon={TbBrandLinkedin}
+            />
+          </div>
         </div>
       </Container>
 
@@ -22,7 +35,7 @@ export default function Home() {
 
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-
+            <Experience/>
           </div>
         </div>
       </Container>

@@ -186,13 +186,13 @@ function Avatar({
 }
 
 function VisitorCount() {
-  const [count, setCount] = useState(null);
+  const [count, setCount] = useState(0); // switch back to null
 
   useEffect(() => {
     async function fetchCount() {
       try {
-        const response = await axios.get('https://nyh3cwajne.execute-api.us-west-1.amazonaws.com/Prod/visitor-count');
-        setCount(response.data.count);
+        //const response = await axios.get('https://nyh3cwajne.execute-api.us-west-1.amazonaws.com/Prod/visitor-count');
+        //setCount(response.data.count);
 
       } catch (error) {
         console.error('Error fetching visitor count:', error);
