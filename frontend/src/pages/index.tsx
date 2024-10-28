@@ -2,8 +2,15 @@ import { Container } from "@/components/Container";
 import { TbBrandGithubFilled, TbBrandLinkedin  } from "react-icons/tb"
 import { SocialLink } from "@/components/Links/SocialLink";
 import { Experience } from "@/components/Experience";
+import { Article } from "@/components/Blog/Article";
+import { getAllArticles, type ArticleWithSlug } from '@/lib/articles'
 
-export default function Home() {
+interface HomeProps {
+  articles: ArticleWithSlug[]
+}
+
+export default function Home({ articles }: HomeProps) {
+
   return (
     <>
       <Container className="mt-9">
@@ -16,12 +23,12 @@ export default function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="#"
+              href="https://github.com/JustinDosaj"
               aria-label="Follow on GitHub"
               icon={TbBrandGithubFilled}
             />
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/justin-dosaj-8a5009221/"
               aria-label="Follow on LinkedIn"
               icon={TbBrandLinkedin}
             />
@@ -32,7 +39,9 @@ export default function Home() {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-
+            {articles.map((article) => (
+              <Article key={article.slug} article={article} />
+            ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Experience/>
@@ -42,3 +51,11 @@ export default function Home() {
     </>
   )
 }
+
+export async function getStaticProps() {
+
+  const articles = (await getAllArticles()).slice(0, 4)
+
+  return { props: { articles} }
+}
+

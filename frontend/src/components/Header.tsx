@@ -186,6 +186,7 @@ function Avatar({
 }
 
 function VisitorCount() {
+  
   const [count, setCount] = useState(null); // switch back to null
 
   useEffect(() => {
