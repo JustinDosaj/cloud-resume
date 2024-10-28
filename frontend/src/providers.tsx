@@ -4,7 +4,7 @@ import { createContext, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 
 function usePrevious<T>(value: T) {
-  let ref = useRef<T>()
+  const ref = useRef<T>()
 
   useEffect(() => {
     ref.current = value
@@ -16,8 +16,8 @@ function usePrevious<T>(value: T) {
 export const AppContext = createContext<{ previousPathname?: string }>({})
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  let pathname = usePathname()
-  let previousPathname = usePrevious(pathname)
+  const pathname = usePathname()
+  const previousPathname = usePrevious(pathname)
 
   return (
     <AppContext.Provider value={{ previousPathname }}>
