@@ -1,4 +1,5 @@
-import { Header } from '@/components/Header'
+import { Header } from './Elements/Header'
+import { Footer } from './Elements/Footer'
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,6 +12,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <div className="relative flex w-full flex-col">
         <Header />
         <main className="flex-auto">{children}</main>
+        <Footer />
         {/* Making Test Change to this Branch */}
       </div>
     </>
