@@ -1,7 +1,6 @@
 import { TbBriefcase, TbArrowDown  } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
-import logoFacebook from '@/images/facebook.svg'
 
 
 export function Experience() {

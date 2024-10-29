@@ -1,7 +1,6 @@
 import { TbBriefcase, TbArrowDown  } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
-import Link from "next/link";
 
 
 export function Certifications() {
