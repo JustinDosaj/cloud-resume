@@ -8,7 +8,7 @@ const projects = [
   {
     name: 'Zesti AI',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
+      'Turn cooking videos into recipes in seconds with AI',
     link: { href: 'https://www.zesti.ai/', label: 'planetaria.tech' },
     logo: logoFacebook,
   },
