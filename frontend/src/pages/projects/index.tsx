@@ -2,7 +2,6 @@ import { type Metadata } from 'next'
 import { TbLink } from "react-icons/tb";
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/Blog/SimpleLayout'
-import logoFacebook from '@/images/facebook.svg'
 
 const projects = [
   {
