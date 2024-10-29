@@ -12,6 +12,7 @@ import {
 } from '@headlessui/react'
 import clsx from 'clsx'
 import { Container } from '@/components/Container'
+import { TbChevronDown } from "react-icons/tb";
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -20,20 +21,6 @@ function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function ChevronDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 8 6" aria-hidden="true" {...props}>
-      <path
-        d="M1.75 1.75 4 4.25l2.25-2.5"
-        fill="none"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -65,7 +52,7 @@ function MobileNavigation(
     <Popover {...props}>
       <PopoverButton className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
         Menu
-        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700" />
+        <TbChevronDown className="ml-3 h-auto w-3 stroke-zinc-500 group-hover:stroke-zinc-700" />
       </PopoverButton>
       <PopoverBackdrop
         transition

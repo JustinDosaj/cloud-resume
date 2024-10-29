@@ -4,8 +4,6 @@ import { type ArticleWithSlug } from '@/lib/articles'
 
 export function Article({ article }: { article: ArticleWithSlug }) {
 
-  console.log(article.slug)
-
     return (
       <Card as="article">
         <Card.Title href={`/articles/${article.slug}`}>

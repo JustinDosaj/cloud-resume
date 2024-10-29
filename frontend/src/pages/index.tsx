@@ -4,6 +4,7 @@ import { SocialLink } from "@/components/Links/SocialLink";
 import { Experience } from "@/components/Experience";
 import { Article } from "@/components/Blog/Article";
 import { getAllArticles, type ArticleWithSlug } from '@/lib/articles'
+import { Certifications } from "@/components/Certifications";
 
 interface HomeProps {
   articles: ArticleWithSlug[]
@@ -44,6 +45,7 @@ export default function Home({ articles }: HomeProps) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
+            <Certifications/>
             <Experience/>
           </div>
         </div>
