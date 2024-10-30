@@ -1,9 +1,9 @@
-import { TbBriefcase, TbArrowDown  } from "react-icons/tb";
+import { TbBriefcase, TbArrowRight  } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
 
 
-export function Experience() {
+export function Projects() {
     const resume: Array<Role> = [
         {
           company: 'Zesti AI',
@@ -14,13 +14,15 @@ export function Experience() {
             label: 'Present',
             dateTime: new Date().getFullYear().toString(),
           },
+          url: 'https://www.zesti.ai/',
         },
         {
-          company: 'StormgateTactics.com',
+          company: 'Stormgate Tactics',
           title: 'Software Developer',
           logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/260x260-ST-Logo.png",
           start: '2023',
           end: '2023',
+          url: 'https://stormgatetactics.com/',
         },
         {
           company: 'Vurge.io',
@@ -28,6 +30,7 @@ export function Experience() {
           logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/vurge-logo.png",
           start: '2020',
           end: '2022',
+          url: 'https://www.vurge.io/',
         },
       ]
     
@@ -42,9 +45,9 @@ export function Experience() {
               <Role key={roleIndex} role={role} />
             ))}
           </ol>
-          <Button href="#" variant="secondary" className="group mt-6 w-full">
-            Download CV
-            <TbArrowDown className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600" />
+          <Button href="/projects" variant="secondary" className="group mt-6 w-full">
+            View All
+            <TbArrowRight className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600" />
           </Button>
         </div>
       )
@@ -56,6 +59,7 @@ interface Role {
     logo: string | StaticImageData
     start: string | { label: string; dateTime: string }
     end: string | { label: string; dateTime: string }
+    url?: string
   }
 
 function getImageSource(src: string | StaticImageData): string {
@@ -73,29 +77,29 @@ function Role({ role }: { role: Role }) {
       const endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
   
     return (
-      <li className="flex gap-4">
-        <div className="bg-white relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5">
-          <img src={getImageSource(role.logo)} alt="" className="h-7 w-7"/>
-        </div>
-        <dl className="flex flex-auto flex-wrap gap-x-2">
-          <dt className="sr-only">Company</dt>
-          <dd className="w-full flex-none text-sm font-medium text-zinc-900">
-            {role.company}
-          </dd>
-          <dt className="sr-only">Role</dt>
-          <dd className="text-xs text-zinc-500">
-            {role.title}
-          </dd>
-          <dt className="sr-only">Date</dt>
-          <dd
-            className="ml-auto text-xs text-zinc-400"
-            aria-label={`${startLabel} until ${endLabel}`}
-          >
-            <time dateTime={startDate}>{startLabel}</time>{' '}
-            <span aria-hidden="true">—</span>{' '}
-            <time dateTime={endDate}>{endLabel}</time>
-          </dd>
-        </dl>
-      </li>
+        <li className="flex gap-4">
+          <div className="bg-white relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5">
+            <img src={getImageSource(role.logo)} alt="" className="h-7 w-7"/>
+          </div>
+          <dl className="flex flex-auto flex-wrap gap-x-2">
+            <dt className="sr-only">Company</dt>
+            <dd className="w-full flex-none text-sm font-medium text-zinc-900">
+              {role.company}
+            </dd>
+            <dt className="sr-only">Role</dt>
+            <dd className="text-xs text-zinc-500">
+              {role.title}
+            </dd>
+            <dt className="sr-only">Date</dt>
+            <dd
+              className="ml-auto text-xs text-zinc-400"
+              aria-label={`${startLabel} until ${endLabel}`}
+            >
+              <time dateTime={startDate}>{startLabel}</time>{' '}
+              <span aria-hidden="true">—</span>{' '}
+              <time dateTime={endDate}>{endLabel}</time>
+            </dd>
+          </dl>
+        </li>
     )
 }
