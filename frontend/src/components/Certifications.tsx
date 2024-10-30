@@ -1,4 +1,4 @@
-import { TbBriefcase, TbArrowDown  } from "react-icons/tb";
+import { TbBriefcase, TbDownload   } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
 
@@ -33,7 +33,7 @@ export function Certifications() {
           </ol>
           <Button href="#" variant="secondary" className="group mt-6 w-full">
             Download CV
-            <TbArrowDown className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600" />
+            <TbDownload  className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600" />
           </Button>
         </div>
       )
@@ -60,14 +60,14 @@ function Role({ role }: { role: Role }) {
 
   
     return (
-      <button onClick={ () => window.open(role.url)} disabled={role.url ? false : true}>
+
         <li className="flex gap-4">
           <div className="bg-white relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5">
             <img src={getImageSource(role.logo)} alt="" className="h-7 w-7"/>
           </div>
           <dl className="flex flex-auto flex-wrap gap-x-2">
             <dt className="sr-only">Name</dt>
-            <dd className="w-full text-left flex-none text-sm font-medium text-zinc-900">
+            <dd className="w-full flex-none text-sm font-medium text-zinc-900">
               {role.name}
             </dd>
             <dt className="sr-only">Role</dt>
@@ -82,6 +82,6 @@ function Role({ role }: { role: Role }) {
             </dd>
           </dl>
         </li>
-      </button>
+
     )
 }
