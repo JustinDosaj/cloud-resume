@@ -49,7 +49,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
-              I am Justin Dosaj. I live in San Diego, where I create digital solutions.
+              I&apos;m Justin Dosaj. I live in San Diego, where I create digital solutions.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600">
               <p>
@@ -74,9 +74,9 @@ export default function About() {
                 This achievement reflects my dedication to continuous learning and staying current with industry best practices.
               </p>
               <p>
-                Looking ahead, I'm passionate about pursuing a career in cloud engineering, 
+                Looking ahead, I&apos;m passionate about pursuing a career in cloud engineering, 
                 combining my experience in web development with my growing expertise in AWS. 
-                I'm eager to work on projects that utilize cloud services to their fullest potential, 
+                I&apos;m eager to work on projects that utilize cloud services to their fullest potential, 
                 creating scalable and reliable solutions for complex problems
               </p>
             </div>

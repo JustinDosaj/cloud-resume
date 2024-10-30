@@ -25,7 +25,7 @@ export default function Home({ articles }: HomeProps) {
             Software developer, cloud architect, and digital innovator.
           </h1>
           <p className="mt-6 text-base text-zinc-600">
-          Hello, I'm Justin, a software developer based in San Diego. I have been building web applications for over 5 years and recently began exploring cloud technologies. I'm passionate about creating efficient and scalable solutions to solve complex problems.
+          Hello, I&apos;m Justin, a software developer based in San Diego. I have been building web applications for over 5 years and recently began exploring cloud technologies. I&apos;m passionate about creating efficient and scalable solutions to solve complex problems.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
