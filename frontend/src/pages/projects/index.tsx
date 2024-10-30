@@ -36,7 +36,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Applications built to solve real-world challenges"
-        intro="Throughout my journey as a developer and entrepreneur, I've brought numerous projects from concept to completion. These represent my most significant achievements, showcasing my ability to identify problems and create effective solutions."
+        intro="Throughout my journey as a developer and entrepreneur, I&apos;ve brought numerous projects from concept to completion. These represent my most significant achievements, showcasing my ability to identify problems and create effective solutions."
       >
         <ul
           role="list"
