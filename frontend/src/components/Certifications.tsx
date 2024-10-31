@@ -21,15 +21,30 @@ export function Certifications() {
         },
       ]
 
-      const handleDownload = () => {
+      const handleDownload = async () => {
 
-        const link = document.createElement('a');
-        link.href = resumeUrl;
-        link.setAttribute('download', 'justin_dosaj_resume_no_pi.pdf');
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        try {
+          // Fetch Resume PDF
+          const response = await fetch(resumeUrl)
+          const blob = await response.blob()
 
+          const blobUrl = window.URL.createObjectURL(blob)
+          
+          // Download file link
+          const link = document.createElement('a')
+          link.href = blobUrl;
+          link.download = 'justin_dosaj_resume_no_pi.pdf';
+
+          document.body.append(link)
+          link.click()
+
+          // Cleanup document & window
+          document.body.removeChild(link)
+          window.URL.revokeObjectURL(blobUrl)
+
+        } catch(error) {
+          console.error('Problem downloading file: ', error)
+        }
       }
     
       return (
