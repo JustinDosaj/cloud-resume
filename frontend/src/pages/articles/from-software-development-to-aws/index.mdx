@@ -1,0 +1,96 @@
+import { ArticleLayout } from '@/components/Blog/ArticleLayout'
+
+export const article = {
+  author: 'Justin Dosaj',
+  date: '2024-10-30',
+  title: 'From Software Development to AWS Certified: My Solutions Architect Journey',
+  description:
+    'Transitioning from software development to cloud architecture brought unique challenges and insights. Here is how I achieved AWS Solutions Architect certification in just one month.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+As a software developer, I've always been comfortable writing code and working with databases. But when I decided to transition into cloud engineering, I knew I needed to prove my expertise. This is the story of how I earned my AWS Solutions Architect certification in just one month, and what I learned along the way.
+
+After years of writing code and managing databases, I realized that the future of software development is inextricably linked with cloud computing. Making the transition to cloud engineering felt like a natural evolution of my career, and AWS certification seemed like the perfect way to validate my new skills.
+
+## Leveraging My Database Experience
+
+One significant advantage I had going into this journey was my extensive database experience. When studying AWS's database services like RDS, Aurora, and DynamoDB, I found myself nodding along with the concepts. Replication, sharding, backup strategies – these were all familiar territories, just with an AWS twist. This foundation gave me the confidence to tackle the more challenging aspects of the certification.
+
+## The AWS Services Tsunami
+
+The biggest challenge? The sheer volume of AWS services. As a developer, I was familiar with EC2, S3, and maybe a handful of other services. But AWS is an ocean of services, each with its own use cases, limitations, and best practices. Every day of studying felt like discovering ten new services I hadn't known existed.
+
+Some particularly challenging areas included:
+- Understanding the intricacies of VPC networking
+- Memorizing the various EC2 instance types and their use cases
+- Grasping the differences between similar services (like when to use ECS vs. EKS vs. Fargate)
+- Learning the numerous storage options and their specific use cases
+
+## My One-Month Study Strategy
+
+With only a month to prepare, I needed a structured approach. Here's how I broke it down:
+
+### Week 1: Foundation
+- Focused on core services (EC2, VPC, S3, IAM)
+- Leveraged my database knowledge to quickly understand RDS and DynamoDB
+- Created a mental model of how AWS services interact
+
+### Week 2: Expanding Knowledge
+- Dove into networking concepts
+- Studied various compute options
+- Explored storage solutions beyond S3
+
+### Week 3: Advanced Concepts
+- Focused on high availability and disaster recovery
+- Studied security best practices
+- Learned about cost optimization
+
+### Week 4: Practice and Review
+- Took multiple practice exams
+- Reviewed weak areas
+- Focused on AWS Well-Architected Framework principles
+
+## Key Insights from a Developer's Perspective
+
+Coming from a development background, I found these insights particularly valuable:
+
+1. **Think Architecturally**: Instead of thinking about individual components (like I did with code), I had to think about entire systems and how they work together.
+
+2. **Embrace Managed Services**: As a developer, I was used to building everything from scratch. AWS taught me the value of using managed services to reduce operational overhead.
+
+3. **Security is Different**: Application security and cloud security are different beasts. IAM, security groups, and NACLs required a different mindset from traditional application security.
+
+4. **Cost Matters**: Unlike development where resources are often pre-provisioned, cloud architecture requires constant attention to cost optimization.
+
+## From Development to Architecture
+
+The most significant mental shift was moving from a developer's "how do I build this?" mindset to an architect's "how should this be structured?" perspective. Instead of thinking about code implementation, I had to think about:
+
+- High availability across multiple Availability Zones
+- Scalability through auto-scaling groups
+- Security at every layer
+- Cost optimization through appropriate service selection
+- Performance optimization through service integration
+
+## Tips for Other Developers Making the Transition
+
+1. Use your coding knowledge as a foundation, not a crutch
+2. Focus on understanding AWS's managed services rather than trying to replicate your development solutions
+3. Pay extra attention to networking concepts – they're crucial
+4. Don't skip the business aspects (cost optimization, maintenance, operations)
+5. Practice with real scenarios rather than just memorizing facts
+
+## The Road Ahead
+
+Earning the AWS Solutions Architect certification was just the first step in my journey from developer to cloud engineer. While my development background and database experience gave me a solid foundation, I've learned that cloud engineering requires a broader perspective and a different set of skills.
+
+The certification process taught me that being a cloud engineer isn't just about understanding individual services – it's about knowing how to combine them to create resilient, scalable, and cost-effective solutions. As I continue on this path, I'm excited to apply both my development experience and my new cloud knowledge to build better systems.
+
+Remember, if you're a developer considering this transition: your coding background is a strength, but be prepared to expand your thinking beyond the code. The cloud is waiting, and it's worth the journey.
