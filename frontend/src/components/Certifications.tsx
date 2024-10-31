@@ -1,6 +1,7 @@
 import { TbBriefcase, TbDownload   } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
+import { resumeUrl } from "./Constants";
 
 
 export function Certifications() {
@@ -19,6 +20,17 @@ export function Certifications() {
             earned: 'Dec. 2020',
         },
       ]
+
+      const handleDownload = () => {
+
+        const link = document.createElement('a');
+        link.href = resumeUrl;
+        link.setAttribute('download', 'justin_dosaj_resume_no_pi.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+      }
     
       return (
         <div className="rounded-2xl border border-zinc-100 p-6">
@@ -31,7 +43,7 @@ export function Certifications() {
               <Role key={roleIndex} role={role} />
             ))}
           </ol>
-          <Button href="#" variant="secondary" className="group mt-6 w-full">
+          <Button onClick={handleDownload} variant="secondary" className="group mt-6 w-full">
             Download CV
             <TbDownload  className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600" />
           </Button>
@@ -45,7 +57,7 @@ interface Role {
     logo: string | StaticImageData
     earned: string | { label: string; dateTime: string }
     url?: string
-  }
+}
 
 function getImageSource(src: string | StaticImageData): string {
     if (typeof src === 'string') return src;
