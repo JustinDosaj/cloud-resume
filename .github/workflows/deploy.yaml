@@ -80,7 +80,7 @@ jobs:
       - name: Deploy to S3
         working-directory: ./frontend
         run: |
-          aws s3 sync out/ s3://${{ secrets.S3_BUCKET }} --delete --exclude "images/*"
+          aws s3 sync out/ s3://${{ secrets.S3_BUCKET }} --delete --exclude "images/*" --exclude "documents/*"
           
       - name: Invalidate CloudFront cache
         run: |
