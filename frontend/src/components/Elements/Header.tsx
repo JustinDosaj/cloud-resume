@@ -13,6 +13,7 @@ import {
 import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import { TbChevronDown } from "react-icons/tb";
+import { headshotImage } from '../Constants'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -160,7 +161,7 @@ function Avatar({
       {...props}
     >
       <img
-        src={'https://s3.us-west-1.amazonaws.com/justindosaj.com/images/headshot.jpeg'}
+        src={headshotImage}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(

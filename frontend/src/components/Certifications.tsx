@@ -1,7 +1,7 @@
 import { TbBriefcase, TbDownload   } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
-import { resumeUrl } from "./Constants";
+import { awsCertImage, awsCertUrl, resumeUrl, csDegreeImage } from "./Constants";
 
 
 export function Certifications() {
@@ -9,14 +9,14 @@ export function Certifications() {
         {
             name: 'AWS Certified Solutions Architect - Associate',
             authority: 'Amazon Web Services',
-            logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/aws-sa-cert.png",
+            logo: awsCertImage,
             earned: 'Oct. 2024',
-            url: 'https://www.credly.com/badges/563a1ee8-0193-4487-a3d7-5280463ba296/public_url',
+            url: awsCertUrl,
         },
         {
             name: 'Bacherlor of Science in Computer Science',
             authority: 'CSU San Marcos',
-            logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/csusm-sm-logo.png",
+            logo: csDegreeImage,
             earned: 'Dec. 2020',
         },
       ]
