@@ -1,6 +1,7 @@
 import { TbBriefcase, TbArrowRight  } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
+import { stormgateLogo, stormgateUrl, vurgeLogo, vurgeUrl, zestiLogo, zestiUrl } from "./Constants";
 
 
 export function Projects() {
@@ -8,29 +9,29 @@ export function Projects() {
         {
           company: 'Zesti AI',
           title: 'Software Developer',
-          logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/Zesti-Logo+(600+x+600+px).png",
+          logo: zestiLogo,
           start: '2023',
           end: {
             label: 'Present',
             dateTime: new Date().getFullYear().toString(),
           },
-          url: 'https://www.zesti.ai/',
+          url: zestiUrl,
         },
         {
           company: 'Stormgate Tactics',
           title: 'Software Developer',
-          logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/260x260-ST-Logo.png",
+          logo: stormgateLogo,
           start: '2023',
           end: '2023',
-          url: 'https://stormgatetactics.com/',
+          url: stormgateUrl,
         },
         {
           company: 'Vurge.io',
           title: 'Software Developer',
-          logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/vurge-logo.png",
+          logo: vurgeLogo,
           start: '2020',
           end: '2022',
-          url: 'https://www.vurge.io/',
+          url: vurgeUrl,
         },
       ]
     

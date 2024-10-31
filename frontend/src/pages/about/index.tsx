@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import { TbBrandGithubFilled, TbBrandLinkedin, TbMail } from "react-icons/tb"
 import Head from 'next/head'
+import { headshotImage } from '@/components/Constants'
 
 function SocialLink({
   className,
@@ -40,7 +41,7 @@ export default function About() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <img
-                src={`https://s3.us-west-1.amazonaws.com/justindosaj.com/images/headshot.jpeg`}
+                src={headshotImage}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover"
