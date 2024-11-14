@@ -1,30 +1,34 @@
 import { TbLink } from "react-icons/tb";
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/Blog/SimpleLayout'
+import { vurgeUrl, vurgeLogo, zestiLogo, zestiUrl, stormgateLogo, stormgateUrl, documentationLogo, documentationUrl } from "@/components/Constants";
 import Head from 'next/head';
 
 const projects = [
   {
     name: 'Zesti AI',
-    description:
-      'Turn cooking videos into recipes in seconds with AI',
-    link: { href: 'https://www.zesti.ai/', label: 'www.zesti.ai' },
-    logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/Zesti-Logo+(600+x+600+px).png",
+    description: 'Turn cooking videos into recipes in seconds with AI',
+    link: { href: zestiUrl, label: 'www.zesti.ai' },
+    logo: zestiLogo,
   },
   {
     name: 'Stormgate Tactics',
-    description:
-      'Learn everything you need to know about Stormgate, the next-gen RTS game!',
-    link: { href: 'https://stormgatetactics.com/', label: 'www.stormgatetactics.com' },
-    logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/260x260-ST-Logo.png",
+    description: 'Learn everything you need to know about Stormgate, the next-gen RTS game!',
+    link: { href: stormgateUrl, label: 'www.stormgatetactics.com' },
+    logo: stormgateLogo,
   },
   {
     name: 'Vurge.io',
-    description:
-      'Website designed and built for a freelance web development company.',
-    link: { href: 'https://www.vurge.io/', label: 'www.vurge.io' },
-    logo: "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/vurge-logo.png",
+    description: 'Website designed and built for a freelance web development company.',
+    link: { href: vurgeUrl, label: 'www.vurge.io' },
+    logo: vurgeLogo,
   },
+  {
+    name: 'Zesti AI Documentation',
+    description:'Find documentation for my projects on gitbook.',
+    link: { href: documentationUrl, label: 'www.gitbook.com' },
+    logo: documentationLogo 
+  }
 ]
 
 export default function Projects() {
