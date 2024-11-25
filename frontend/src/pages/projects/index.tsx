@@ -1,10 +1,16 @@
 import { TbLink } from "react-icons/tb";
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/Blog/SimpleLayout'
-import { vurgeUrl, vurgeLogo, zestiLogo, zestiUrl, stormgateLogo, stormgateUrl, documentationLogo, documentationUrl } from "@/components/Constants";
+import { vurgeUrl, vurgeLogo, zestiLogo, zestiUrl, stormgateLogo, stormgateUrl, documentationLogo, documentationUrl, aiDetectionUrl, githubLogo } from "@/components/Constants";
 import Head from 'next/head';
 
 const projects = [
+  {
+    name: 'AI Soccer Offside Detection System',
+    description: 'Used Python, YOLOv8 and OpenCV to detect players, ball, referees and players in offside positions',
+    link: { href: aiDetectionUrl, label: 'www.github.com' },
+    logo: githubLogo,
+  },
   {
     name: 'Zesti AI',
     description: 'Turn cooking videos into recipes in seconds with AI',
@@ -23,12 +29,6 @@ const projects = [
     link: { href: vurgeUrl, label: 'www.vurge.io' },
     logo: vurgeLogo,
   },
-  {
-    name: 'Zesti AI Documentation',
-    description:'Find documentation for my projects on gitbook.',
-    link: { href: documentationUrl, label: 'www.gitbook.com' },
-    logo: documentationLogo 
-  }
 ]
 
 export default function Projects() {
