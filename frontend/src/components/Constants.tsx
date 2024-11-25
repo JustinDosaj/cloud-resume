@@ -16,9 +16,6 @@ export const stormgateUrl = "https://stormgatetactics.com/"
 export const vurgeLogo = "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/vurge-logo.png"
 export const vurgeUrl = "https://www.vurge.io/"
 
-export const documentationLogo = "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/documentation_logo.png"
-export const documentationUrl = "https://justin-dosaj.gitbook.io/zesti.ai"
-
 export const headshotImage = "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/headshot.jpeg"
 
 export const githubLogo = "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/github-logo.png"

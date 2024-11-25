@@ -1,7 +1,7 @@
 import { TbLink } from "react-icons/tb";
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/Blog/SimpleLayout'
-import { vurgeUrl, vurgeLogo, zestiLogo, zestiUrl, stormgateLogo, stormgateUrl, documentationLogo, documentationUrl, aiDetectionUrl, githubLogo } from "@/components/Constants";
+import { vurgeUrl, vurgeLogo, zestiLogo, zestiUrl, stormgateLogo, stormgateUrl, aiDetectionUrl, githubLogo } from "@/components/Constants";
 import Head from 'next/head';
 
 const projects = [
