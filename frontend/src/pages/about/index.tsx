@@ -64,9 +64,9 @@ export default function About() {
                 This experience honed my ability to manage projects independently and adapt to rapidly changing requirements and technologies.
               </p>
               <p>
-                My recent projects showcase my growing technical expertise. 
-                I developed Stormgate Tactics, a comprehensive gaming platform, and created Zesti.AI, 
-                an innovative service that uses AI technology to transform cooking videos into detailed recipes. 
+                My recent work showcases my growing technical expertise. 
+                I developed Stormgate Tactics, a comprehensive gaming platform, and helped create Zesti AI, 
+                an innovative service that transforms cooking videos into detailed recipes. 
                 Each project has strengthened my skills in full-stack development, API integration, and cloud architecture.
               </p>
               <p>
@@ -75,7 +75,7 @@ export default function About() {
                 This achievement reflects my dedication to continuous learning and staying current with industry best practices.
               </p>
               <p>
-                Looking ahead, I&apos;m passionate about pursuing a career in cloud engineering, 
+                Looking ahead, I&apos;m passionate about pursuing a career in cloud engineering and machine learning, 
                 combining my experience in web development with my growing expertise in AWS. 
                 I&apos;m eager to work on projects that utilize cloud services to their fullest potential, 
                 creating scalable and reliable solutions for complex problems

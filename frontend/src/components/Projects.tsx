@@ -39,7 +39,7 @@ export function Projects() {
         <div className="rounded-2xl border border-zinc-100 p-6">
           <h2 className="flex text-sm font-semibold text-zinc-900">
             <TbBriefcase className="h-6 w-6 flex-none" />
-            <span className="ml-3">Projects</span>
+            <span className="ml-3">Work Experience & Projects</span>
           </h2>
           <ol className="mt-6 space-y-4">
             {resume.map((role, roleIndex) => (

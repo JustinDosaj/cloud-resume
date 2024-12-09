@@ -25,7 +25,7 @@ const projects = [
   },
   {
     name: 'Vurge.io',
-    description: 'Website designed and built for a freelance web development company.',
+    description: 'Website designed and built for a small search engine optimization company.',
     link: { href: vurgeUrl, label: 'www.vurge.io' },
     logo: vurgeLogo,
   },
