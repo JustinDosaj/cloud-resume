@@ -20,3 +20,5 @@ export const headshotImage = "https://s3.us-west-1.amazonaws.com/justindosaj.com
 
 export const githubLogo = "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/github-logo.png"
 export const aiDetectionUrl = "https://github.com/JustinDosaj/cv-offside-detection"
+
+export const headPhoto = "https://s3.us-west-1.amazonaws.com/justindosaj.com/images/headphoto.jpg"

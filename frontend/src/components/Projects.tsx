@@ -1,15 +1,23 @@
 import { TbBriefcase, TbArrowRight  } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
-import { stormgateLogo, stormgateUrl, vurgeLogo, vurgeUrl, zestiLogo, zestiUrl } from "./Constants";
+import { stormgateLogo, stormgateUrl, vurgeLogo, vurgeUrl, zestiUrl, githubLogo, headPhoto } from "./Constants";
 
 
 export function Projects() {
     const resume: Array<Role> = [
         {
-          company: 'Zesti AI',
-          title: 'Software Developer',
-          logo: zestiLogo,
+          company: 'Soccer Offside Detection System',
+          title: 'Software Engineer',
+          logo: githubLogo,
+          start: '2024',
+          end: '2024',
+          url: stormgateUrl,
+        },
+        {
+          company: 'Vurge LLC',
+          title: 'Full Stack Engineer',
+          logo: vurgeLogo,
           start: '2023',
           end: {
             label: 'Present',
@@ -18,17 +26,9 @@ export function Projects() {
           url: zestiUrl,
         },
         {
-          company: 'Stormgate Tactics',
+          company: 'Freelance Developer',
           title: 'Software Developer',
-          logo: stormgateLogo,
-          start: '2023',
-          end: '2023',
-          url: stormgateUrl,
-        },
-        {
-          company: 'Vurge.io',
-          title: 'Software Developer',
-          logo: vurgeLogo,
+          logo: headPhoto,
           start: '2020',
           end: '2022',
           url: vurgeUrl,

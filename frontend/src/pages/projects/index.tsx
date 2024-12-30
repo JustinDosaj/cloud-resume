@@ -13,21 +13,21 @@ const projects = [
   },
   {
     name: 'Zesti AI',
-    description: 'Turn cooking videos into recipes in seconds with AI',
+    description: 'Contributed to the design, planning, and development of an interactive web application that converts social media cooking videos into organized recipes',
     link: { href: zestiUrl, label: 'www.zesti.ai' },
     logo: zestiLogo,
+  },
+  {
+    name: 'Vurge LLC',
+    description: 'Worked for a small web app development & SEO company.',
+    link: { href: vurgeUrl, label: 'www.vurge.io' },
+    logo: vurgeLogo,
   },
   {
     name: 'Stormgate Tactics',
     description: 'Learn everything you need to know about Stormgate, the next-gen RTS game!',
     link: { href: stormgateUrl, label: 'www.stormgatetactics.com' },
     logo: stormgateLogo,
-  },
-  {
-    name: 'Vurge.io',
-    description: 'Website designed and built for a small search engine optimization company.',
-    link: { href: vurgeUrl, label: 'www.vurge.io' },
-    logo: vurgeLogo,
   },
 ]
 
