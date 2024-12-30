@@ -16,7 +16,7 @@ export function Projects() {
         },
         {
           company: 'Vurge LLC',
-          title: 'Full Stack Engineer',
+          title: 'Full Stack Developer',
           logo: vurgeLogo,
           start: '2023',
           end: {
