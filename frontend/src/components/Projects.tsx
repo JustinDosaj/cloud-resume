@@ -1,7 +1,7 @@
 import { TbBriefcase, TbArrowRight  } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
-import { stormgateLogo, stormgateUrl, vurgeLogo, vurgeUrl, zestiUrl, githubLogo, headPhoto } from "./Constants";
+import { stormgateUrl, vurgeLogo, vurgeUrl, zestiUrl, githubLogo, headPhoto } from "./Constants";
 
 
 export function Projects() {
