@@ -1,7 +1,7 @@
 import { TbLink } from "react-icons/tb";
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/Blog/SimpleLayout'
-import { vurgeUrl, vurgeLogo, zestiLogo, zestiUrl, stormgateLogo, stormgateUrl, aiDetectionUrl, githubLogo } from "@/components/Constants";
+import { vurgeUrl, vurgeLogo, zestiLogo, zestiUrl, stormgateLogo, stormgateUrl, aiDetectionUrl, githubLogo, cloudResumeLogo, cloudResumeUrl } from "@/components/Constants";
 import Head from 'next/head';
 
 const projects = [
@@ -10,6 +10,12 @@ const projects = [
     description: 'Used Python, YOLOv8 and OpenCV to detect players, ball, referees and players in offside positions',
     link: { href: aiDetectionUrl, label: 'www.github.com' },
     logo: githubLogo,
+  },
+  {
+    name: 'Cloud Résumé',
+    description: 'Deployed my résumé website using AWS services such as S3, DynamoDB, CloudFront, Lambda, and API Gateway, with a CI/CD pipeline',
+    link: { href: cloudResumeUrl, label: 'www.github.com' },
+    logo: cloudResumeLogo,
   },
   {
     name: 'Zesti AI',
