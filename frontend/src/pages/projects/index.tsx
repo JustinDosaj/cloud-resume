@@ -25,13 +25,13 @@ const projects = [
   },
   {
     name: 'Vurge LLC',
-    description: 'Worked for a small web app development & SEO company.',
+    description: 'A small web development company that I worked with to build web applications for various clients.',
     link: { href: vurgeUrl, label: 'www.vurge.io' },
     logo: vurgeLogo,
   },
   {
     name: 'Stormgate Tactics',
-    description: 'Learn everything you need to know about Stormgate, the next-gen RTS game!',
+    description: 'A website app I built for Stormgate that allows players to look-up and post builds. The app includes a blog, dynamic search & filtering, user authentication and more.',
     link: { href: stormgateUrl, label: 'www.stormgatetactics.com' },
     logo: stormgateLogo,
   },
