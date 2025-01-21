@@ -1,7 +1,7 @@
 import { TbBriefcase, TbArrowRight  } from "react-icons/tb";
 import { Button } from "./Button";
 import { type StaticImageData } from 'next/image'
-import { stormgateUrl, vurgeLogo, vurgeUrl, zestiUrl, githubLogo, headPhoto } from "./Constants";
+import { stormgateUrl, vurgeLogo, vurgeUrl, zestiUrl, githubLogo, zestiLogo } from "./Constants";
 
 
 export function Projects() {
@@ -15,9 +15,9 @@ export function Projects() {
           url: stormgateUrl,
         },
         {
-          company: 'Vurge LLC',
+          company: 'Zesti AI',
           title: 'Full Stack Developer',
-          logo: vurgeLogo,
+          logo: zestiLogo,
           start: '2023',
           end: {
             label: 'Present',
@@ -26,9 +26,9 @@ export function Projects() {
           url: zestiUrl,
         },
         {
-          company: 'Freelance Developer',
-          title: 'Software Developer',
-          logo: headPhoto,
+          company: 'Vurge LLC',
+          title: 'Full Stack Developer',
+          logo: vurgeLogo,
           start: '2020',
           end: '2022',
           url: vurgeUrl,
