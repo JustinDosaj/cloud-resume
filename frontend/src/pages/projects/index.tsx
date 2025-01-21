@@ -7,19 +7,19 @@ import Head from 'next/head';
 const projects = [
   {
     name: 'AI Soccer Offside Detection System',
-    description: 'Used Python, YOLOv8 and OpenCV to detect players, ball, referees and players in offside positions',
+    description: 'Used Python, YOLOv8 and OpenCV to detect players, ball, referees and players in offside positions.',
     link: { href: aiDetectionUrl, label: 'www.github.com' },
     logo: githubLogo,
   },
   {
     name: 'Cloud Résumé',
-    description: 'Deployed my résumé website using AWS services such as S3, DynamoDB, CloudFront, Lambda, and API Gateway, with a CI/CD pipeline',
+    description: 'Deployed my résumé website using AWS services such as S3, DynamoDB, CloudFront, Lambda, and API Gateway, with a CI/CD pipeline.',
     link: { href: cloudResumeUrl, label: 'www.github.com' },
     logo: cloudResumeLogo,
   },
   {
     name: 'Zesti AI',
-    description: 'Contributed to the design, planning, and development of an interactive web application that converts social media cooking videos into organized recipes',
+    description: 'Contributed to the design, planning, and development of an interactive web application that converts social media cooking videos into organized recipes.',
     link: { href: zestiUrl, label: 'www.zesti.ai' },
     logo: zestiLogo,
   },
