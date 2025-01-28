@@ -31,7 +31,7 @@ const projects = [
   },
   {
     name: 'Stormgate Tactics',
-    description: 'A website app I built for Stormgate that allows players to look-up and post builds. The app includes a blog, dynamic search & filtering, user authentication and more.',
+    description: 'A web app I built for Stormgate that allows players to look-up and post builds. The app includes a blog, dynamic search & filtering, user authentication and more.',
     link: { href: stormgateUrl, label: 'www.stormgatetactics.com' },
     logo: stormgateLogo,
   },
