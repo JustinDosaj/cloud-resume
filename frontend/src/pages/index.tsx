@@ -22,10 +22,10 @@ export default function Home({ articles }: HomeProps) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
-            Software developer, cloud architect, and digital innovator.
+            Software Engineer and Cloud Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600">
-          Hello, I&apos;m Justin, a software developer based in San Diego. I have been building web applications for over 5 years and recently began exploring cloud technologies. I&apos;m passionate about creating efficient and scalable solutions to solve complex problems.
+            Hi, I&apos;m Justin, a software engineer based in San Diego, CA. With over 4 years of experience in application and cloud development, I focus on building efficient & scalable solutions that tackle complex challenges.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

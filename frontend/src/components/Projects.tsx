@@ -16,11 +16,11 @@ export function Projects() {
         },
         {
           company: 'Zesti AI',
-          title: 'Full Stack Developer',
+          title: 'Full Stack Engineer',
           logo: zestiLogo,
           start: '2023',
           end: {
-            label: 'Present',
+            label: '2024',
             dateTime: new Date().getFullYear().toString(),
           },
           url: zestiUrl,
@@ -30,7 +30,7 @@ export function Projects() {
           title: 'Full Stack Developer',
           logo: vurgeLogo,
           start: '2020',
-          end: '2022',
+          end: '2023',
           url: vurgeUrl,
         },
       ]
