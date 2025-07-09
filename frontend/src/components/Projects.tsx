@@ -18,9 +18,9 @@ export function Projects() {
           company: 'Zesti AI',
           title: 'Full Stack Engineer',
           logo: zestiLogo,
-          start: '2023',
+          start: '2024',
           end: {
-            label: '2024',
+            label: '2025',
             dateTime: new Date().getFullYear().toString(),
           },
           url: zestiUrl,
